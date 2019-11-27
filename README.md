@@ -1,6 +1,6 @@
 # Linear regression with graph
 
-![alt text](https://i.imgur.com/PstA3Pw.png)
+![alt text](https://i.imgur.com/WOdBUHs.png)
 
 
 Main language -> Objective-C. 
