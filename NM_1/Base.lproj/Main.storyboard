@@ -819,6 +819,10 @@
                                     <segue destination="7e6-AQ-09r" kind="embed" id="IHH-yC-knE"/>
                                 </connections>
                             </containerView>
+                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-Ha-hVi">
+                                <rect key="frame" x="324" y="263" width="445" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </containerView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="WAm-C0-4Ay" firstAttribute="baseline" secondItem="9b9-Rw-Fdd" secondAttribute="baseline" id="0bI-qb-Jyd"/>

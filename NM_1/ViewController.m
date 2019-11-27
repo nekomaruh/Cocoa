@@ -124,17 +124,18 @@
     }else{
         // y-y1 = m (x-x1)
         // y = m(x-x1) + y1
+        // Final f(x)
+        
         // Run C code //
         runAlgorithm();
+        // Run C code //
+        
         [GraphBridge sharedSingleton].a = a;
         [GraphBridge sharedSingleton].b = b;
         
         NSViewController *vc = [self.storyboard instantiateControllerWithIdentifier:@"SwiftViewController"];
         
         [vc viewDidLoad];
-        
-        // Run C code //
-        
         [resultsText setEditable:true];
         [resultsText setString:@""];
         [resultsText insertText:[NSString stringWithFormat:@"Sum X = %.2f\n", sumX]];
@@ -142,7 +143,9 @@
         [resultsText insertText:[NSString stringWithFormat:@"Sum X*Y = %.2f\n", sumXY]];
         [resultsText insertText:[NSString stringWithFormat:@"Sum X^2 = %.2f\n", sumX2]];
         [resultsText insertText:[NSString stringWithFormat:@"a = %.2f\n", a]];
-        [resultsText insertText:[NSString stringWithFormat:@"b = %.2f\n", b]];
+        [resultsText insertText:[NSString stringWithFormat:@"b = %.2f\n\n", b]];
+        [resultsText insertText:[NSString stringWithFormat:@"Formula: f(x) = a + b*x\n", sumX]];
+        [resultsText insertText:[NSString stringWithFormat:@"Formula: f(x) = %.2f + %.2f*x\n", a, b]];
         [resultsText setEditable:false];
         
         btnCalculateX.enabled = NO;

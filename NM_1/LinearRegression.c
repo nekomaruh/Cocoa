@@ -113,3 +113,4 @@ void runAlgorithm(){
     
     avg = sumY*n;
 }
+
